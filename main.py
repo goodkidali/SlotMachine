@@ -119,13 +119,11 @@ def spin(balance):
             print(f"Insufficient funds. Your current balance is ${balance}")
         else:
             print(f"You are betting ${bet} on {lines} lines. Total bet: ${total_bet}")
-            confirm = input("Confirm? (y/n), q to quit: ")
+            confirm = input("Confirm? (y/n): ")
             if confirm == 'y':
                 break
             elif confirm == 'n':
                 continue
-            elif confirm == 'q':
-                exit()
             else:
                 print("Invalid option.")
                 continue
